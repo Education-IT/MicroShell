@@ -74,4 +74,4 @@ gcc -o microshell microshell.c
 ## Czego się nauczyłem:
 - Przed studiami informatycznymi - miałem bardzo małą styczność z programowaniem. Projekt ten był idealnym wyzwaniem, podsumowywującym dotychczasowo zdobytą wiedzę.
 - Nauczyłem się podstaw odpowiedniego wykorzystywania procesów potomnych - poznałem funkcje: `fork()` / `wait()`/ `waitpid()` / `exec()`.
-- Napotkałem wiele trudności ze zmianą "stringa" w tablice w języku C - poradziłem sobie z tym problemem szukając informacji w Internecie. Dzięki czemu poznałem funkcję `strtok()`.
+- Napotkałem wiele trudności ze zmianą w języku C, wprowadzonego przez uzytkownika: "stringa" w tablice w której na ideksach znajdowały się kolejne słowa/polecenia - poradziłem sobie z tym problemem szukając informacji w Internecie. Dzięki czemu poznałem funkcję `strtok()`.

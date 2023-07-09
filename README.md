@@ -3,7 +3,8 @@
 
 > **Completed during the first semester of computer science studies.**
 
-![Bash](https://github.com/Education-IT/MicroShell/blob/main/images/Bash.png){: align=right width="200"}
+<img align="right" src="https://github.com/Education-IT/MicroShell/blob/main/images/Bash.png" width="200"/>
+
 
 The task was to use the C/C++ programming language to create a program that emulates partial functionality of the **Bash** shell. This program is designed to run only on **Unix** systems. During development, I personally used the **Ubuntu** operating system.
 

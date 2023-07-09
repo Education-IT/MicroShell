@@ -1,49 +1,43 @@
-![enter image description here](https://raw.githubusercontent.com/Education-IT/MicroShell/main/images/Banner.png)
-## Projekt zaliczeniowy na przedmiot - ***Systemy Operacyjne*** - **UAM**
+![MicroShell](https://raw.githubusercontent.com/Education-IT/MicroShell/main/images/Banner.png)
+## Final project for the course - **Operating Systems** - UAM
 
-> **Zrealizowano w pierwszym semestrze studiów informatycznych.**
+> **Completed during the first semester of computer science studies.**
 
-<img align="right" src="https://github.com/Education-IT/MicroShell/blob/main/images/Bash.png" width="200"/>
+![Bash](https://github.com/Education-IT/MicroShell/blob/main/images/Bash.png){: align=right width="200"}
 
-Zadanie polegało na wykorzystaniu języka C/C++ do napisania programu
-odzwierciedlającego częściowe działanie powłoki **Bash**. Program ten, z założenia, możliwy jest jedynie do uruchomienia na systemach  **Unix***. W trakcie pracy, osobiście korzystałem z sytemu operacyjnego - **Ubuntu**.
+The task was to use the C/C++ programming language to create a program that emulates partial functionality of the **Bash** shell. This program is designed to run only on **Unix** systems. During development, I personally used the **Ubuntu** operating system.
 
-![enter image description here](https://img.shields.io/badge/C-A8B9CC.svg?style=for-the-badge&logo=C&logoColor=black) ![enter image description here](https://img.shields.io/badge/GNU%20Bash-4EAA25.svg?style=for-the-badge&logo=GNU-Bash&logoColor=white)  ![enter image description here](https://img.shields.io/badge/Linux-FCC624.svg?style=for-the-badge&logo=Linux&logoColor=black)[ ![enter image description here](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://education-it.pl/)
- ## 
-**Program "MircroShell" :**
- 1)  Wyświetla **login** aktualnie zalogowanego użytkownika oraz **znak zachęty** w postaci `[{path}] $`, gdzie `{path}` jest ścieżką do bieżącego katalogu roboczego.
- 2) Obsługuje polecenie `cd`, działające analogicznie jak [`cd`] znane nam z powłoki bash.
- 3) Umożliwia tworzenie i usuwanie katalogów za pomocą polecenia `mkdir` / `rmdir` 
- 4) Przyjmuje polecenia odwołujące się przez nazwę do programów znajdujących się w katalogach opisanych wartością zmiennej środowiskowej [`PATH`] oraz umożliwia wywołanie tych skryptów i programów z argumentami.
- 5) Obsługuje polecenie `exit`, kończące działanie programu powłoki;
- 6) Obsługuje polecenie `help`, wyświetlające na ekranie informacje o autorze programu i oferowanych przez niego funkcjonalnościach;
- 7) Wypisuje komunikat błędu, gdy niemożliwe jest poprawne zinterpretowanie polecenia;
-  
-  ##  Przykładowe działanie programu
- > Widok po skorzystaniu z polecenia `help` 
-
-
-![enter image description here](https://raw.githubusercontent.com/Education-IT/MicroShell/main/images/Microshell-help.PNG)
-
+![C](https://img.shields.io/badge/C-A8B9CC.svg?style=for-the-badge&logo=C&logoColor=black) ![Bash](https://img.shields.io/badge/GNU%20Bash-4EAA25.svg?style=for-the-badge&logo=GNU-Bash&logoColor=white)  ![Linux](https://img.shields.io/badge/Linux-FCC624.svg?style=for-the-badge&logo=Linux&logoColor=black)[![Website](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://education-it.pl/)
 ## 
+**MicroShell Program:**
+1) It displays the **login** of the currently logged-in user and the **prompt** symbol in the form of `[{path}] $`, where `{path}` is the path to the current working directory.
+2) It handles the `cd` command, which works similarly to the `cd` command known from the bash shell.
+3) It allows for creating and deleting directories using the `mkdir` / `rmdir` commands.
+4) It accepts commands by name that refer to programs located in directories described by the value of the `PATH` environment variable, and allows for calling these scripts and programs with arguments.
+5) It handles the `exit` command, which terminates the shell program.
+6) It handles the `help` command, which displays information about the program's author and the offered functionalities.
+7) It displays an error message when a command cannot be correctly interpreted.
+
+## Example Usage of the Program
+> View after using the `help` command
+
+![MicroShell Help](https://raw.githubusercontent.com/Education-IT/MicroShell/main/images/Microshell-help.PNG)
+
 <br>
 
-> Tworzenie / usuwanie / poruszanie się po drzewie - **katalogów**.
-> 
->Wykorzystywanie poleceń wskazywanych przez zmienną środowiskową `PATH`.
+> Creating / deleting / navigating through the directory tree.
 
-![enter image description here](https://raw.githubusercontent.com/Education-IT/MicroShell/main/images/Microshell-dir.PNG)
+![MicroShell Directory](https://raw.githubusercontent.com/Education-IT/MicroShell/main/images/Microshell-dir.PNG)
 
-##  Instalacja:
-1) **Pobierz repozytorium *MicroShell*.**
+## Installation:
+1) **Clone the *MicroShell* repository.**
 
 ```bash
-
 git clone https://github.com/Education-IT/MicroShell.git
 
 ```
 
-2) **Przejdź do pobranego katalogu.**
+2) **Navigate to the downloaded directory.**
 
 ```bash
 
@@ -52,7 +46,7 @@ cd MicroShell/
 ```
  
  
-3) **Skompiluj program za pomocą gcc.**
+3) **Compile the program using gcc.**
 
 ```bash
 
@@ -61,7 +55,7 @@ gcc -o microshell microshell.c
 ```
 
 
-4) **Uruchom program.**
+4) **Run the program.**
 
 ```bash
 
@@ -71,7 +65,7 @@ gcc -o microshell microshell.c
 
   
 
-## Czego się nauczyłem:
-- Przed studiami informatycznymi - miałem bardzo małą styczność z programowaniem. Projekt ten był idealnym wyzwaniem, podsumowywującym dotychczasowo zdobytą wiedzę.
-- Nauczyłem się podstaw odpowiedniego wykorzystywania procesów potomnych - poznałem funkcje: `fork()` / `wait()`/ `waitpid()` / `exec()`.
-- Napotkałem wiele trudności ze zmianą w języku C, wprowadzonego przez uzytkownika: "stringa" w tablice w której na ideksach znajdowały się kolejne słowa/polecenia - poradziłem sobie z tym problemem szukając informacji w Internecie. Dzięki czemu poznałem funkcję `strtok()`.
+## What have i learned:
+- Prior to studying computer science, I had very little programming experience. This project was an excellent challenge that summarized the knowledge I had acquired so far.
+- I learned the basics of utilizing child processes properly and familiarized myself with functions such as `fork()`, `wait()`, `waitpid()`, and `exec()`.
+- I encountered difficulties when converting user input in C, which consisted of a string containing multiple words/commands, into an array. I managed to solve this problem by researching online and discovered the `strtok()` function.
